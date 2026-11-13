@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["security", "dependencies"]
+  - package-ecosystem: "docker"
+    directories: ["/nginx-lb-docker/app1", "/nginx-lb-docker/app2"]
+    schedule:
+      interval: "weekly"
+    labels: ["security", "dependencies"]
